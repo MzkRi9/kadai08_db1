@@ -11,7 +11,7 @@ $review = $_POST["review"];
 //2. DB接続します
 try {
   //最後の''内はPWですが、Password:MAMP='root',XAMPP=''
-  $pdo = new PDO('mysql:dbname=ren_playlist;charset=utf8;host=localhost','root','');
+  $pdo = new PDO('mysql:dbname=***********;charset=utf8;host=***********','***********','***********');
 } catch (PDOException $e) {
   exit('DB_CONECT:'.$e->getMessage()); //どこがエラーになっているのかわかるように「DB_CONECT」だよと
 }
